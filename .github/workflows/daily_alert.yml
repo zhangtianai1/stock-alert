@@ -1,0 +1,21 @@
+name: daily alert
+on:
+  schedule:
+    - cron: '30 7 * * 1-5'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: pip install -r requirements.txt
+      - run: python alert.py
+      - name: dingtalk
+        if: ${{ secrets.DINGTALK_WEBHOOK != "" }}
+        env:
+          WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+        run: |
+          python -c "import json,os; json.dump({'dingtalk_webhook':os.environ['WEBHOOK'],'default_channel':'dingtalk'},open('alert_config.json','w'))" && python alert.py
