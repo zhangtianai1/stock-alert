@@ -1,0 +1,56 @@
+{
+  "stocks": [
+    {
+      "code": "603019",
+      "name": "\u4e2d\u79d1\u66d9\u5149",
+      "cost": 93.5,
+      "shares": 100
+    },
+    {
+      "code": "002185",
+      "name": "\u534e\u5929\u79d1\u6280",
+      "cost": 21.93,
+      "shares": 400
+    },
+    {
+      "code": "000063",
+      "name": "\u4e2d\u5174\u901a\u8baf",
+      "cost": 35.79,
+      "shares": 200
+    },
+    {
+      "code": "601899",
+      "name": "\u7d2b\u91d1\u77ff\u4e1a",
+      "cost": 27.62,
+      "shares": 500
+    },
+    {
+      "code": "002415",
+      "name": "\u6d77\u5eb7\u5a01\u89c6",
+      "cost": 33.86,
+      "shares": 300
+    },
+    {
+      "code": "600276",
+      "name": "\u6052\u745e\u533b\u836f",
+      "cost": 55.36,
+      "shares": 100
+    },
+    {
+      "code": "600036",
+      "name": "\u62db\u5546\u94f6\u884c",
+      "cost": 37.55,
+      "shares": 200
+    },
+    {
+      "code": "600941",
+      "name": "\u4e2d\u56fd\u79fb\u52a8",
+      "cost": 88.42,
+      "shares": 100
+    }
+  ],
+  "alerts": {
+    "pct_change_up": 5.0,
+    "pct_change_down": -3.0
+  }
+}
