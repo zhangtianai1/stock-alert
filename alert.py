@@ -1,33 +1,19 @@
-﻿import requests, json, sys, os
-from datetime import datetime
-CFG=os.path.join(os.path.dirname(__file__),'alert_config.json')
-WLT=os.path.join(os.path.dirname(__file__),'watchlist.json')
-def load(p):
-    with open(p,'r',encoding='utf-8') as f: return json.load(f)
-def get_prices(codes):
-    q=','.join(['sh'+c if c[0]=='6' else 'sz'+c for c,nm in codes])
-    r=requests.get(f'http://qt.gtimg.cn/q={q}',timeout=8)
-    res={}
-    for line in r.text.strip().strip(';').split(';'):
-        p=line.strip().strip('"').split('~')
-        if len(p)>32: res[p[2]]=(p[1],float(p[3]) if p[3] else 0,float(p[32]) if p[32] else 0)
-    return res
-def check():
-    cfg=load(CFG); stks=load(WLT).get('stocks',[])
-    codes=[(s['code'],s.get('name','')) for s in stks]
-    qs=get_prices(codes)
-    now=datetime.now().strftime('%m-%d %H:%M')
-    lines=[f'自选股监控 ({now})','']
-    total=0
-    for s in stks:
-        d=qs.get(s['code'])
-        if not d: continue
-        nm,pr,ch=d
-        cst=s.get('cost',0); sh=s.get('shares',100)
-        pnl=(pr-cst)*sh if cst>0 else 0; total+=pnl
-        tag='+' if pnl>=0 else ''
-        lines.append(f"{'*' if ch>=5 or ch<=-3 else' '} {nm}: {pr:.2f} ({ch:+.2f}%) 盈亏{tag}{pnl:.0f}")
-    lines.append(f'\n总盈亏: +{total:.0f}' if total>=0 else f'\n总盈亏: {total:.0f}')
-    print('\n'.join(lines))
-if __name__=='__main__': check()
-
+import requests,json,os;from datetime import datetime
+S=[("603019.SS","中科曙光",93.50,1),("002185.SZ","华天科技",21.93,4),("000063.SZ","中兴通讯",35.79,2),("601899.SS","紫金矿业",27.62,5),("002415.SZ","海康威视",33.86,3),("600276.SS","恒瑞医药",55.36,1),("600036.SS","招商银行",37.55,2),("600941.SS","中国移动",88.42,1)]
+def m():
+    syms=",".join([s[0] for s in S])
+    r=requests.get(f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={syms}",timeout=15)
+    p={}
+    for i in r.json()["quoteResponse"]["result"]: p[i["symbol"]]=(i.get("regularMarketPrice",0),i.get("regularMarketChangePercent",0))
+    t=0; l=[f"收盘监控 ({datetime.now().strftime('%%m-%%d %%H:%%M')})",""]
+    for sym,name,cost,qty in S:
+        if sym not in p: continue
+        pr,ch=p[sym]; pl=(pr-cost)*qty*100; t+=pl
+        l.append(f"{'🟢' if ch>=0 else '🔴'} {name}: {pr:.2f} ({ch:+.2f}%) 盈亏{pl:+>.0f}")
+    l.append(f"
+总盈亏: {t:+>.0f} ({(t/100000*100):+.2f}%)")
+    msg="
+".join(l); print(msg)
+    wh=os.environ.get("WEBHOOK","")
+    if wh: requests.post(wh,json={"msgtype":"markdown","markdown":{"title":"收盘监控","text":msg}},timeout=10)
+if __name__=="__main__": m()
