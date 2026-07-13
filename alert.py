@@ -5,7 +5,7 @@ def m():
     r=requests.get(f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={syms}",timeout=15)
     p={}
     for i in r.json()["quoteResponse"]["result"]: p[i["symbol"]]=(i.get("regularMarketPrice",0),i.get("regularMarketChangePercent",0))
-    t=0; l=[f"收盘监控 ({datetime.now().strftime('%%m-%%d %%H:%%M')})",""]
+    t=0; l=[f"收盘监控 ({datetime.now().strftime('%m-%d %H:%M')})",""]
     for sym,name,cost,qty in S:
         if sym not in p: continue
         pr,ch=p[sym]; pl=(pr-cost)*qty*100; t+=pl
