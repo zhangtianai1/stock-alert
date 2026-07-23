@@ -1,0 +1,136 @@
+{
+  "update_time": "2026-07-23 10:28:36",
+  "indices": {
+    "sh000001": {
+      "name": "上证指数",
+      "price": 3876.78,
+      "chg_pct": 0.25,
+      "amount": 102587552.0
+    },
+    "sh000300": {
+      "name": "沪深300",
+      "price": 4728.0,
+      "chg_pct": 0.23,
+      "amount": 74181858.0
+    },
+    "sh000688": {
+      "name": "科创50",
+      "price": 1789.69,
+      "chg_pct": -3.78,
+      "amount": 13918711.0
+    },
+    "sh000016": {
+      "name": "上证50",
+      "price": 2978.77,
+      "chg_pct": -0.41,
+      "amount": 20420714.0
+    },
+    "sh000905": {
+      "name": "中证500",
+      "price": 7734.31,
+      "chg_pct": -0.22,
+      "amount": 45303670.0
+    },
+    "sz399001": {
+      "name": "深证成指",
+      "price": 14123.31,
+      "chg_pct": 0.44,
+      "amount": 116942577.0
+    },
+    "sz399006": {
+      "name": "创业板指",
+      "price": 3575.52,
+      "chg_pct": 0.25,
+      "amount": 51633300.0
+    }
+  },
+  "virtual_portfolio": {
+    "positions": [
+      {
+        "code": "603019",
+        "name": "中科曙光",
+        "price": 97.82,
+        "chg_pct": -4.24,
+        "cost": 93.5,
+        "shares": 100,
+        "value": 9782.0,
+        "pnl": 432.0
+      },
+      {
+        "code": "002185",
+        "name": "华天科技",
+        "price": 17.69,
+        "chg_pct": -3.96,
+        "cost": 21.93,
+        "shares": 400,
+        "value": 7076.0,
+        "pnl": -1696.0
+      },
+      {
+        "code": "000063",
+        "name": "中兴通讯",
+        "price": 35.92,
+        "chg_pct": -4.21,
+        "cost": 35.79,
+        "shares": 200,
+        "value": 7184.0,
+        "pnl": 26.0
+      },
+      {
+        "code": "601899",
+        "name": "紫金矿业",
+        "price": 33.06,
+        "chg_pct": 2.67,
+        "cost": 27.62,
+        "shares": 500,
+        "value": 16530.0,
+        "pnl": 2720.0
+      },
+      {
+        "code": "002415",
+        "name": "海康威视",
+        "price": 35.77,
+        "chg_pct": 0.39,
+        "cost": 33.86,
+        "shares": 300,
+        "value": 10731.0,
+        "pnl": 573.0
+      },
+      {
+        "code": "600276",
+        "name": "恒瑞医药",
+        "price": 54.91,
+        "chg_pct": -0.87,
+        "cost": 55.36,
+        "shares": 100,
+        "value": 5491.0,
+        "pnl": -45.0
+      },
+      {
+        "code": "600036",
+        "name": "招商银行",
+        "price": 38.91,
+        "chg_pct": 0.52,
+        "cost": 37.55,
+        "shares": 200,
+        "value": 7782.0,
+        "pnl": 272.0
+      },
+      {
+        "code": "600941",
+        "name": "中国移动",
+        "price": 94.43,
+        "chg_pct": 0.36,
+        "cost": 88.42,
+        "shares": 100,
+        "value": 9443.0,
+        "pnl": 601.0
+      }
+    ],
+    "cash": 34351,
+    "stock_value": 74019.0,
+    "total_value": 108370.0,
+    "total_pnl": 8370.0,
+    "total_pnl_pct": 8.37
+  }
+}
