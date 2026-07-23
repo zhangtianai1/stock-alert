@@ -4,6 +4,9 @@ on:
     - cron: '30 7 * * 1-5'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -16,5 +19,5 @@ jobs:
       - run: python fetch_data.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "每日行情更新 $(date +'%Y-%m-%d %H:%M')"
+          commit_message: "每日行情更新"
           file_pattern: '_market_data.json'
