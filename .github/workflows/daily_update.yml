@@ -17,7 +17,8 @@ jobs:
           python-version: '3.11'
       - run: pip install requests
       - run: python fetch_data.py
+      - run: python quant_pipeline.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "每日行情更新"
-          file_pattern: '_market_data.json'
+          commit_message: "每日行情+量化信号 $(date +'%Y-%m-%d')"
+          file_pattern: '_market_data.json _signals.json'
