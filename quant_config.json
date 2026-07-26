@@ -1,0 +1,37 @@
+﻿{
+  "strategy_name": "综合技术面评分策略",
+  "version": "1.0",
+  "description": "基于MA趋势、RSI、成交量、位置的综合评分系统",
+  "params": {
+    "trend_ma_short": 5,
+    "trend_ma_long": 20,
+    "rsi_period": 14,
+    "rsi_oversold": 30,
+    "rsi_overbought": 70,
+    "vol_ratio_high": 1.2,
+    "vol_ratio_low": 0.8
+  },
+  "risk": {
+    "max_position_pct": 15,
+    "max_sector_pct": 40,
+    "stop_loss_pct": -15,
+    "take_profit_pct": 20,
+    "cash_reserve_pct": 15
+  },
+  "scoring": {
+    "trend_bull": 2.0,
+    "trend_bear": -1.0,
+    "rsi_oversold": 1.0,
+    "rsi_overbought": -1.0,
+    "volume_high": 0.5,
+    "volume_low": -0.5,
+    "position_low": 0.5,
+    "position_high": -0.5
+  },
+  "signal_thresholds": {
+    "strong_buy": 2.5,
+    "buy": 1.0,
+    "sell": -1.0,
+    "strong_sell": -2.0
+  }
+}
