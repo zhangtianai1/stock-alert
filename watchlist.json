@@ -25,12 +25,6 @@
       "shares": 300
     },
     {
-      "code": "600276",
-      "name": "恒瑞医药",
-      "cost": 55.36,
-      "shares": 100
-    },
-    {
       "code": "600036",
       "name": "招商银行",
       "cost": 37.55,
@@ -44,7 +38,7 @@
     }
   ],
   "initial_capital": 100000,
-  "cash": 41339,
+  "cash": 46639,
   "alerts": {
     "pct_change_up": 5.0,
     "pct_change_down": -3.0
