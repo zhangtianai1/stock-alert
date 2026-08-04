@@ -35,10 +35,22 @@
       "name": "中国移动",
       "cost": 88.42,
       "shares": 100
+    },
+    {
+      "code": "601012",
+      "name": "隆基绿能",
+      "cost": 13.07,
+      "shares": 600
+    },
+    {
+      "code": "300014",
+      "name": "亿纬锂能",
+      "cost": 54.94,
+      "shares": 100
     }
   ],
   "initial_capital": 100000,
-  "cash": 46639,
+  "cash": 33303.0,
   "alerts": {
     "pct_change_up": 5.0,
     "pct_change_down": -3.0
