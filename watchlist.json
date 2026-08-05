@@ -16,7 +16,7 @@
       "code": "601899",
       "name": "紫金矿业",
       "cost": 27.62,
-      "shares": 500
+      "shares": 250
     },
     {
       "code": "002415",
@@ -50,7 +50,7 @@
     }
   ],
   "initial_capital": 100000,
-  "cash": 33303.0,
+  "cash": 41828.0,
   "alerts": {
     "pct_change_up": 5.0,
     "pct_change_down": -3.0
