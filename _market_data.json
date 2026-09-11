@@ -1,47 +1,47 @@
 {
-  "update_time": "2026-09-10 12:17:05",
+  "update_time": "2026-09-11 12:15:29",
   "indices": {
     "sh000001": {
       "name": "上证指数",
-      "price": 3934.4,
-      "chg_pct": -0.43,
-      "amount": 77967269.0
+      "price": 3888.11,
+      "chg_pct": -1.18,
+      "amount": 95818634.0
     },
     "sh000300": {
       "name": "沪深300",
-      "price": 4548.39,
-      "chg_pct": -0.53,
-      "amount": 39061620.0
+      "price": 4510.16,
+      "chg_pct": -0.84,
+      "amount": 52220665.0
     },
     "sh000688": {
       "name": "科创50",
-      "price": 1569.22,
-      "chg_pct": -0.69,
-      "amount": 5366836.0
+      "price": 1553.39,
+      "chg_pct": -1.01,
+      "amount": 7787962.0
     },
     "sh000016": {
       "name": "上证50",
-      "price": 2904.29,
-      "chg_pct": -0.21,
-      "amount": 9941643.0
+      "price": 2868.32,
+      "chg_pct": -1.24,
+      "amount": 14688922.0
     },
     "sh000905": {
       "name": "中证500",
-      "price": 7717.8,
-      "chg_pct": -0.65,
-      "amount": 28169560.0
+      "price": 7580.54,
+      "chg_pct": -1.78,
+      "amount": 35385476.0
     },
     "sz399001": {
       "name": "深证成指",
-      "price": 13617.67,
-      "chg_pct": -0.77,
-      "amount": 86747514.0
+      "price": 13471.26,
+      "chg_pct": -1.08,
+      "amount": 101371215.0
     },
     "sz399006": {
       "name": "创业板指",
-      "price": 3338.42,
+      "price": 3322.04,
       "chg_pct": -0.49,
-      "amount": 38005643.0
+      "amount": 45774452.0
     }
   },
   "virtual_portfolio": {
@@ -49,88 +49,88 @@
       {
         "code": "603019",
         "name": "中科曙光",
-        "price": 82.35,
-        "chg_pct": -0.1,
+        "price": 82.25,
+        "chg_pct": -0.12,
         "cost": 93.5,
         "shares": 100,
-        "value": 8235.0,
-        "pnl": -1115.0
+        "value": 8225.0,
+        "pnl": -1125.0
       },
       {
         "code": "002185",
         "name": "华天科技",
-        "price": 16.38,
-        "chg_pct": 1.3,
+        "price": 16.2,
+        "chg_pct": -1.1,
         "cost": 21.93,
         "shares": 400,
-        "value": 6552.0,
-        "pnl": -2220.0
+        "value": 6480.0,
+        "pnl": -2292.0
       },
       {
         "code": "000063",
         "name": "中兴通讯",
-        "price": 32.45,
-        "chg_pct": -1.93,
+        "price": 32.17,
+        "chg_pct": -0.86,
         "cost": 35.79,
         "shares": 200,
-        "value": 6490.0,
-        "pnl": -668.0
+        "value": 6434.0,
+        "pnl": -724.0
       },
       {
         "code": "601899",
         "name": "紫金矿业",
-        "price": 34.11,
-        "chg_pct": -0.84,
+        "price": 32.26,
+        "chg_pct": -5.42,
         "cost": 27.62,
         "shares": 500,
-        "value": 17055.0,
-        "pnl": 3245.0
+        "value": 16130.0,
+        "pnl": 2320.0
       },
       {
         "code": "002415",
         "name": "海康威视",
-        "price": 33.51,
-        "chg_pct": -0.71,
+        "price": 33.25,
+        "chg_pct": -0.78,
         "cost": 33.86,
         "shares": 300,
-        "value": 10053.0,
-        "pnl": -105.0
+        "value": 9975.0,
+        "pnl": -183.0
       },
       {
         "code": "600276",
         "name": "恒瑞医药",
-        "price": 42.93,
-        "chg_pct": -3.98,
+        "price": 42.67,
+        "chg_pct": -0.61,
         "cost": 55.36,
         "shares": 100,
-        "value": 4293.0,
-        "pnl": -1243.0
+        "value": 4267.0,
+        "pnl": -1269.0
       },
       {
         "code": "600036",
         "name": "招商银行",
-        "price": 41.57,
-        "chg_pct": 1.39,
+        "price": 41.35,
+        "chg_pct": -0.53,
         "cost": 37.55,
         "shares": 200,
-        "value": 8314.0,
-        "pnl": 804.0
+        "value": 8270.0,
+        "pnl": 760.0
       },
       {
         "code": "600941",
         "name": "中国移动",
-        "price": 97.17,
-        "chg_pct": 0.06,
+        "price": 97.72,
+        "chg_pct": 0.57,
         "cost": 88.42,
         "shares": 100,
-        "value": 9717.0,
-        "pnl": 875.0
+        "value": 9772.0,
+        "pnl": 930.0
       }
     ],
     "cash": 34351,
-    "stock_value": 70709.0,
-    "total_value": 105060.0,
-    "total_pnl": 5060.0,
-    "total_pnl_pct": 5.06
+    "stock_value": 69553.0,
+    "total_value": 103904.0,
+    "total_pnl": 3904.0,
+    "total_pnl_pct": 3.9
   }
 }
