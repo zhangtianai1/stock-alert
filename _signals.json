@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-09-24 12:47:00",
+  "update_time": "2026-09-25 12:50:12",
   "signals": [
     {
       "code": "603019",
@@ -27,7 +27,7 @@
       "ma5": 32.54,
       "ma20": 32.85,
       "rsi": 38.4,
-      "vol_ratio": 0.35,
+      "vol_ratio": 0.36,
       "pos_60": 1.1,
       "score": -0.5,
       "signal": "HOLD",
@@ -45,7 +45,7 @@
       "ma5": 31.11,
       "ma20": 32.58,
       "rsi": 30.6,
-      "vol_ratio": 0.8,
+      "vol_ratio": 0.82,
       "pos_60": 41.5,
       "score": -0.5,
       "signal": "HOLD",
@@ -117,7 +117,7 @@
       "ma5": 11.28,
       "ma20": 11.56,
       "rsi": 29.8,
-      "vol_ratio": 0.76,
+      "vol_ratio": 0.77,
       "pos_60": 6.4,
       "score": 0.0,
       "signal": "HOLD",
@@ -139,7 +139,7 @@
       "pos_60": 14.0,
       "score": -1.0,
       "signal": "SELL",
-      "reasons": "空头; 缩量(0.4x); 低位",
+      "reasons": "空头; 缩量(0.5x); 低位",
       "cost": 54.94,
       "shares": 100,
       "position_value": 4891.0,
