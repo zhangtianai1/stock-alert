@@ -1,5 +1,5 @@
 {
-  "update_time": "2026-09-30 13:57:12",
+  "update_time": "2026-10-01 14:36:17",
   "signals": [
     {
       "code": "603019",
@@ -27,7 +27,7 @@
       "ma5": 31.26,
       "ma20": 32.35,
       "rsi": 28.8,
-      "vol_ratio": 0.22,
+      "vol_ratio": 0.21,
       "pos_60": 0.4,
       "score": 0.0,
       "signal": "HOLD",
@@ -135,7 +135,7 @@
       "ma5": 48.98,
       "ma20": 49.63,
       "rsi": 49.3,
-      "vol_ratio": 0.79,
+      "vol_ratio": 0.8,
       "pos_60": 26.2,
       "score": 0.0,
       "signal": "HOLD",
